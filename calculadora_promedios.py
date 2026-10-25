@@ -76,6 +76,7 @@ def main():
     # manejo de lista vacia
     if not materias:
         print("No se ingresaron datos... Finalizando...")
+        print("\n¡Gracias por usar la calculadora de promedios! Hasta pronto.")
         return
     
     promedio = calcular_promedio(calificaciones)
