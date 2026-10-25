@@ -11,8 +11,7 @@ def ingresar_calificaciones():
     while True:
         materia = input("Ingrese el nombre de la materia: ").strip()
         if not materia:
-            print("El nombre de la materia no puede estar vacio.")
-            continue
+            break
         
         # validacion de calificacion, que sea un numero valido
         while True:
@@ -104,5 +103,6 @@ def main():
     print(f"Mejor calificación: {materias[idx_max]} con {calificaciones[idx_max]}")
     print(f"Peor calificación : {materias[idx_min]} con {calificaciones[idx_min]}")
 
+    print("\n¡Gracias por usar la calculadora de promedios! Hasta pronto.")
 if __name__ == "__main__":
     main()
